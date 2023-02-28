@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+
+
+    <title>Platos</title>
+</head>
+<body class="bg-warning  vh-100">
+
+    <!--MENU-->
+ 
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!--ICONO Y NOMBRE-->
+
+            <a class="navbar-brand" href="#">
+                <i class="bi-stopwatch-fill"></i>
+                <span class="text-warning text-ju fs-2 fw-bolder">Fastaurant</span>
+            </a>
+            
+            <!--BOTON MENU-->
+
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--ELEMENTOS MENU COLAPSABLE-->
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" 
+                           aria-current="page"
+                           href="./pantalla00.html">Inicio</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3 active" href="./pantalla03.html">Categorías</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla06.html">Carrito</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla08.html">Seguimiento Pedido</a>
+                    </li>
+                </ul>
+
+                <li class="navbar-nav d-md-inline-block">
+                    <a class="nav-link fs-5 fw-bolder ms-3" href="#">Historial</a>
+                </li>
+
+                <hr class="d-md-none text-white-50">
+
+                <!--INICIAR SESION-->
+                
+                <form class="d-flex ms-3" action="./pantalla01.html">
+                    <button class="btn btn-outline-warning d-none d-md-inline-block" 
+                            type="submit">
+                            Iniciar Sesión
+                    </button>
+                </form>
+          
+            </div>
+        </div>  
+    </nav>
+
+    <!--TITULO-->
+
+    <section id="menu" class="bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text text-center">
+                    <h1 class="fw-bolder p-2">Platos por Categorías</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--PILLS-->
+
+        <ul class="nav nav-pills mb-4 justify-content-center navbar-dark bg-dark" id="pills-tab" role="tablist">
+
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link active text-white" id="pills-todo-tab" data-bs-toggle="pill" data-bs-target="#pills-todo"
+                    type="button" role="tab" aria-controls="pills-todo" aria-selected="true">Todo</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-clasicas-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-clasicas" type="button" role="tab" aria-controls="pills-clasicas"
+                    aria-selected="true">Pizzas Clásicas</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-signature-tab" data-bs-toggle="pill" data-bs-target="#pills-signature"
+                    type="button" role="tab" aria-controls="pills-signature" aria-selected="true">Pizzas Signature</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-especialidad-tab" data-bs-toggle="pill" data-bs-target="#pills-especialidad"
+                    type="button" role="tab" aria-controls="pills-especialidad" aria-selected="true">Pizzas Especialidad</button>
+            </li>
+    
+        </ul>
+
+        <!--TODOS-->
+
+        <div class="tab-content p-5" id="pills-tabContent">
+
+            <div class="tab-pane fade show active px-5" id="pills-todo" role="tabpanel" aria-labelledby="pills-todo-tab"
+                tabindex="0">
+    
+                <div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Americana</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Mozzarella</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hot Chicken</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hawaiian Chicken BBQ</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hawaiana</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Española</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--PIZZAS CLASICAS-->
+
+            <div class="tab-pane fade show" id="pills-clasicas" role="tabpanel"
+            aria-labelledby="pills-clasicas-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Americana</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Mozzarella</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--PIZZAS SIGNATURE-->
+
+            <div class="tab-pane fade show" id="pills-signature" role="tabpanel"
+            aria-labelledby="pills-signature-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hot Chicken</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hawaiian Chicken BBQ</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--PIZZAS ESPECIALIDAD-->
+
+            <div class="tab-pane fade show" id="pills-especialidad" role="tabpanel"
+            aria-labelledby="pills-especialidad-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Hawaiana</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Pizza Española</h5>
+                                <p class="card-text">La mejor Pizza</p>
+                                <p class="card-text">Precio: S/ 10</p>
+                                <a href="#" class="btn btn-outline-warning">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
+</html>

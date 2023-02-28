@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+
+    <title>Carrito</title>
+</head>
+<body class="bg-warning  vh-100">
+
+    <!--MENU-->
+ 
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!--ICONO Y NOMBRE-->
+
+            <a class="navbar-brand" href="#">
+                <i class="bi-stopwatch-fill"></i>
+                <span class="text-warning text-ju fs-2 fw-bolder">Fastaurant</span>
+            </a>
+            
+            <!--BOTON MENU-->
+
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--ELEMENTOS MENU COLAPSABLE-->
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" 
+                           aria-current="page"
+                           href="./pantalla00.html">Inicio</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla03.html">Categorías</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3 active" href="./pantalla06.html">Carrito</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla08.html">Seguimiento Pedido</a>
+                    </li>
+                </ul>
+
+                <li class="navbar-nav d-md-inline-block">
+                    <a class="nav-link fs-5 fw-bolder ms-3" href="#">Historial</a>
+                </li>
+
+                <hr class="d-md-none text-white-50">
+
+                <!--INICIAR SESION-->
+                
+                <form class="d-flex ms-3" action="./pantalla01.html">
+                    <button class="btn btn-outline-warning d-none d-md-inline-block" 
+                            type="submit">
+                            Iniciar Sesión
+                    </button>
+                </form>
+          
+            </div>
+        </div>  
+    </nav>
+
+    <!--TITULO-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 intro-text text-center">
+                <h1 class="fw-bolder p-2">Carrito de Compras</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--TABLA PRODUCTOS EN CARRITO-->
+
+    <table class="table table-dark table-lg-5 text-center align-middle fs-5">
+
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Referencia</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Accion</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                    Hamburguesa
+                </td>
+                <td>
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg"
+                        width="80px">
+                </td>
+                <td>2</td>
+                <td>
+                    <button class="bg-danger " type="button">
+                        <i class="bi-dash"></i>
+                    </button>
+                    <button class="bg-success " type="button">
+                        <i class="bi-plus"></i>
+                    </button>
+                </td>
+                <td>S/ 20</td>
+            </tr>
+
+            <tr>
+                <th scope="row">2</th>
+                <td>Pizza</td>
+                <td>
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg"
+                        width="80px">
+                </td>
+                <td>2</td>
+                <td>
+                    <button class="bg-danger " type="button">
+                        <i class="bi-dash"></i>
+                    </button>
+                    <button class="bg-success " type="button">
+                        <i class="bi-plus"></i>
+                    </button>
+                </td>
+                <td>S/ 20</td>
+            </tr>
+
+            <tr>
+                <th scope="row">3</th>
+                <td>Helado</td>
+                <td>
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg"
+                        width="80px">
+                </td>
+                <td>1</td>
+                <td>
+                    <button class="bg-danger " type="button">
+                        <i class="bi-dash"></i>
+                    </button>
+                    <button class="bg-success " type="button">
+                        <i class="bi-plus"></i>
+                    </button>
+                </td>
+                <td>S/ 10</td>
+            </tr>
+
+            <tr>
+                <th scope="row">4</th>
+                <td>Hamburguesa</td>
+                <td>
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg"
+                        width="80px">
+                </td>
+                <td>1</td>
+                <td>
+                    <button class="bg-danger " type="button">
+                        <i class="bi-dash"></i>
+                    </button>
+                    <button class="bg-success " type="button">
+                        <i class="bi-plus"></i>
+                    </button>
+                </td>
+                <td>S/ 10</td>
+            </tr>
+
+            <tr>
+                <th scope="row">5</th>
+                <td>Pizza</td>
+                <td>
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg"
+                        width="80px">
+                </td>
+                <td>2</td>
+                <td>
+                    <button class="bg-danger " type="button">
+                        <i class="bi-dash"></i>
+                    </button>
+                    <button class="bg-success " type="button">
+                        <i class="bi-plus"></i>
+                    </button>
+                </td>
+                <td>S/ 20</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot class="fw-bold">
+            <tr>
+                <th class="text-center">TOTAL PRODUCTOS</th>
+                <th></th>
+                <th></th>
+                <th>5</th>
+                <th>
+                    <button class="bg-danger" type="button">
+                        Vaciar Todo
+                    </button>
+                </th>
+                <td>S/ 80</td>
+            </tr>
+        
+          </tfoot>
+
+    </table>
+
+    <button class="bg-success fs-1 position-absolute top-100 end-0 translate-middle-y" type="button">
+        Realizar Pedido
+    </button>
+
+
+</body>
+</html>

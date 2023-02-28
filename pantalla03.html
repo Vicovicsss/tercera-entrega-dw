@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+
+
+    <title>Restaurantes</title>
+</head>
+<body class="bg-warning  vh-100">
+
+    <!--MENU-->
+ 
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!--ICONO Y NOMBRE-->
+
+            <a class="navbar-brand" href="#">
+                <i class="bi-stopwatch-fill"></i>
+                <span class="text-warning text-ju fs-2 fw-bolder">Fastaurant</span>
+            </a>
+            
+            <!--BOTON MENU-->
+
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--ELEMENTOS MENU COLAPSABLE-->
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" 
+                           aria-current="page"
+                           href="./pantalla00.html">Inicio</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3 active" href="./pantalla03.html">Categorías</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla06.html">Carrito</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bolder ms-3" href="./pantalla08.html">Seguimiento Pedido</a>
+                    </li>
+                </ul>
+
+                <li class="navbar-nav d-md-inline-block">
+                    <a class="nav-link fs-5 fw-bolder ms-3" href="#">Historial</a>
+                </li>
+
+                <hr class="d-md-none text-white-50">
+
+                <!--INICIAR SESION-->
+                
+                <form class="d-flex ms-3" action="./pantalla01.html">
+                    <button class="btn btn-outline-warning d-none d-md-inline-block" 
+                            type="submit">
+                            Iniciar Sesión
+                    </button>
+                </form>
+          
+            </div>
+        </div>  
+    </nav>
+
+    <!--TITULO-->
+
+    <section id="menu" class="bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text text-center">
+                    <h1 class="fw-bolder p-2">Resturantes por Categorías</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--PILLS-->
+
+        <ul class="nav nav-pills mb-4 justify-content-center navbar-dark bg-dark" id="pills-tab" role="tablist">
+
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link active text-white" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos"
+                    type="button" role="tab" aria-controls="pills-todos" aria-selected="true">Todo</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-pizzas-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-pizzas" type="button" role="tab" aria-controls="pills-pizzas"
+                    aria-selected="true">Pizzas</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-chifa-tab" data-bs-toggle="pill" data-bs-target="#pills-chifa"
+                    type="button" role="tab" aria-controls="pills-chifa" aria-selected="true">Chifa</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-hamburguesas-tab" data-bs-toggle="pill" data-bs-target="#pills-hamburguesas"
+                    type="button" role="tab" aria-controls="pills-hamburguesas" aria-selected="true">Hamburguesas</button>
+            </li>
+    
+            <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link text-white" id="pills-helados-tab" data-bs-toggle="pill" data-bs-target="#pills-helados"
+                    type="button" role="tab" aria-controls="pills-helado" aria-selected="true">Helados</button>
+            </li>
+        </ul>
+
+        <!--TODOS-->
+
+        <div class="tab-content p-5" id="pills-tabContent">
+
+            <div class="tab-pane fade show active px-5" id="pills-todos" role="tabpanel" aria-labelledby="pills-todos-tab"
+                tabindex="0">
+    
+                <div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://play-lh.googleusercontent.com/v71swaFh36wQxK6eYBNKfd8TLUJXDCotut1ebuCVLjVA7RZlOmNJWRx03wmGUcNgBS8" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-secondary text-white">
+                                <h5 class="card-title fw-bolder fs-3 text-white-50">Papa John's</h5>
+                                <p class="card-text text-white-50">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="./pantalla04.html" class="btn btn-outline-warning" >Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Cerrado)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrXL5kTu3mbGnchiOEyarJdK_y8RjOzJ2899DfiUiGWvx7UHkNHNDJv9Txd4gU_SsL3A&usqp=CAU" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Little Caesars</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://mallaventura.pe/uploads/shares/marcas/Logos%20marcas/china-wok.png" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Chinawok</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://clubfranquicia.pe/public/imagen/franquicia/club-franquicia-peru-franquicias-web-pastillas25-1554402693.png" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Patty Wong Chifa</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.bembos.com.pe/logo_1200_x_630.png?v=2" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-secondary text-white">
+                                <h5 class="card-title fw-bolder fs-3 text-white-50">Bembos</h5>
+                                <p class="card-text text-white-50">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Cerrado)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/z7l8rx" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Don Cangrejo</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/2dLbHF" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Gelarti - Helado Gourmet</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/ZOMaxM" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Punto Helado</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--PIZZAS-->
+
+            <div class="tab-pane fade show" id="pills-pizzas" role="tabpanel"
+                 aria-labelledby="pills-pizzas-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://play-lh.googleusercontent.com/v71swaFh36wQxK6eYBNKfd8TLUJXDCotut1ebuCVLjVA7RZlOmNJWRx03wmGUcNgBS8" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-secondary text-white">
+                                <h5 class="card-title fw-bolder fs-3 text-white-50">Papa John's</h5>
+                                <p class="card-text text-white-50">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning" >Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Cerrado)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrXL5kTu3mbGnchiOEyarJdK_y8RjOzJ2899DfiUiGWvx7UHkNHNDJv9Txd4gU_SsL3A&usqp=CAU" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Little Caesars</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--CHIFA-->
+
+            <div class="tab-pane fade show" id="pills-chifa" role="tabpanel"
+            aria-labelledby="pills-chifa-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://mallaventura.pe/uploads/shares/marcas/Logos%20marcas/china-wok.png" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Chinawok</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://clubfranquicia.pe/public/imagen/franquicia/club-franquicia-peru-franquicias-web-pastillas25-1554402693.png" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Patty Wong Chifa</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--HAMBURGUESAS-->
+
+            <div class="tab-pane fade show" id="pills-hamburguesas" role="tabpanel"
+            aria-labelledby="pills-hamburguesas-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://www.bembos.com.pe/logo_1200_x_630.png?v=2" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-secondary text-white">
+                                <h5 class="card-title fw-bolder fs-3 text-white-50">Bembos</h5>
+                                <p class="card-text text-white-50">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Cerrado)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/z7l8rx" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Don Cangrejo</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--HELADOS-->
+
+            <div class="tab-pane fade show" id="pills-helados" role="tabpanel"
+            aria-labelledby="pills-helados-tab" tabindex="0">
+                <div div class="row row-cols-1 row-cols-md-3 g-5 px-5 text-center">
+                    
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/2dLbHF" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Gelarti - Helado Gourmet</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 px-5">
+                        <div class="card bg-dark">
+                            <img src="https://acortar.link/ZOMaxM" 
+                            class="card-img-top" height="300">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title fw-bolder fs-3">Punto Helado</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-outline-warning">Ver Platos</a>
+                            </div>
+                            <div class="card-footer text-white text-center bg-primary">
+                                Horario de atención: 09:00 - 20:00 hrs (Abierto)
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
+</html>
